@@ -19,7 +19,7 @@ pipeline{
                     when { expression {  params.action == 'create' } }
             steps{
             gitCheckout(
-                branch: "main"
+                branch: "main",
                 url: "https://github.com/HarshDevo/Java_app_3.0.git"
             )
             }
